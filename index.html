@@ -1,4 +1,4 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +7,15 @@
 
   <title>Freepix Tools by Hamdani - Free Online Image Tools</title>
 
-  <meta name="description" content="Freepix Tools by Hamdani offers free online image compression, resizing, and conversion. Process supported images directly in your browser.">
+  <meta name="description" content="Freepix Tools by Hamdani offers free online image compression, resizing, conversion, and access to a browser-based AI image generator.">
 
-  <meta name="keywords" content="Freepix Tools, Hamdani, free image compressor, image resizer online, image converter, JPG to PNG, PNG to WebP">
+  <meta name="keywords" content="Freepix Tools, Hamdani, free image compressor, image resizer online, image converter, AI image generator, JPG to PNG, PNG to WebP">
 
   <meta name="author" content="Hamdani">
   <meta name="robots" content="index, follow">
 
   <meta property="og:title" content="Freepix Tools by Hamdani - Free Online Image Tools">
-  <meta property="og:description" content="Compress, resize, and convert images online for free with Freepix Tools by Hamdani.">
+  <meta property="og:description" content="Compress, resize, convert images, and explore browser-based AI image generation with Freepix Tools by Hamdani.">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="style.css">
@@ -125,6 +125,52 @@
       </section>
     </section>
 
+    <!-- AI IMAGE GENERATOR -->
+    <section class="ai-generator-section" id="ai-generator">
+      <div class="ai-generator-heading">
+        <span class="ai-generator-badge">AI IMAGE CREATION</span>
+        <h2>AI Image Generator</h2>
+        <p>
+          Turn your imagination into images using a browser-based AI demo.
+          No personal API key is required.
+        </p>
+      </div>
+
+      <div class="ai-generator-notice">
+        <strong>Before you start</strong>
+        <p>
+          Image generation may require a compatible browser, WebGPU support,
+          and sufficient device memory. The first load may take time.
+          The external service has its own availability and terms.
+        </p>
+      </div>
+
+      <div class="ai-generator-frame">
+        <iframe
+          src="https://websd.mlc.ai/"
+          title="External browser-based AI image generator demo"
+          loading="lazy"
+          allow="webgpu"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
+
+      <p class="ai-generator-fallback">
+        If the generator does not appear here,
+        <a
+          href="https://websd.mlc.ai/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >open the official demo in a new tab</a>.
+      </p>
+
+      <p class="ai-generator-disclaimer">
+        This is an external demonstration and is not operated by Freepix Tools.
+        Its availability, model, licensing, and performance depend on the
+        external project and your device.
+      </p>
+    </section>
+
     <section class="features">
       <article>
         <span>⚡</span>
@@ -171,6 +217,14 @@
         Your images are processed locally on your device.
       </p>
 
+      <h2>AI Image Generator</h2>
+      <p>
+        Explore a browser-based AI image generation demonstration. The
+        generator is provided by an external project and may require a
+        compatible browser and sufficient device resources. It is separate
+        from Freepix Tools' built-in image processing features.
+      </p>
+
       <h2>About the Creator</h2>
       <p>
         Freepix Tools is created by Hamdani to make everyday image editing
@@ -193,4 +247,3 @@
   </footer>
 </body>
 </html>
-```
