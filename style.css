@@ -385,4 +385,43 @@ footer p {
     gap: 18px;
     padding: 30px 5px;
   }
+}```css
+/* SEO Content */
+.seo-content {
+  max-width: 900px;
+  margin: 50px auto 30px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  color: #374151;
+  line-height: 1.8;
 }
+
+.seo-content h2 {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  color: #111827;
+  font-size: 22px;
+}
+
+.seo-content h2:first-child {
+  margin-top: 0;
+}
+
+.seo-content p {
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  .seo-content {
+    margin: 30px 12px;
+    padding: 20px;
+  }
+
+  .seo-content h2 {
+    font-size: 19px;
+  }
+}
+```
