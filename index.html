@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free online tools to compress, resize and convert images quickly in your browser.">
+  <title>Freepix Tools - Free Image Tools</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Freepix <span>Tools</span></a>
+    <span class="privacy">🔒 Browser-based processing</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">FREE ONLINE IMAGE TOOLS</p>
+      <h1>Make your images<br><span>work better.</span></h1>
+      <p class="intro">Compress, resize, and convert your images in a few clicks. Simple, fast, and free.</p>
+    </section>
+
+    <section class="workspace">
+      <div class="tabs" role="tablist" aria-label="Image tools">
+        <button class="tab active" data-mode="compress" role="tab" aria-selected="true">Compress</button>
+        <button class="tab" data-mode="resize" role="tab" aria-selected="false">Resize</button>
+        <button class="tab" data-mode="convert" role="tab" aria-selected="false">Convert</button>
+      </div>
+
+      <label class="upload" for="imageInput">
+        <span class="upload-icon">↑</span>
+        <strong>Choose an image</strong>
+        <span>Click here to select a file from your device</span>
+        <small>Supported by your browser · JPG, PNG, WebP and more</small>
+      </label>
+      <input id="imageInput" type="file" accept="image/*" hidden>
+
+      <div id="settings" class="settings">
+        <div id="formatGroup" class="field">
+          <label for="format">Output format</label>
+          <select id="format">
+            <option value="image/webp">WebP</option>
+            <option value="image/jpeg">JPG</option>
+            <option value="image/png">PNG</option>
+          </select>
+        </div>
+
+        <div id="qualityGroup" class="field">
+          <label for="quality">Quality: <span id="qualityValue">80%</span></label>
+          <input id="quality" type="range" min="10" max="100" value="80">
+        </div>
+
+        <div id="widthGroup" class="field hidden">
+          <label for="width">Width (px)</label>
+          <input id="width" type="number" min="1" max="12000" placeholder="Width">
+        </div>
+
+        <div id="heightGroup" class="field hidden">
+          <label for="height">Height (px)</label>
+          <input id="height" type="number" min="1" max="12000" placeholder="Height">
+        </div>
+
+        <label id="ratioGroup" class="check hidden">
+          <input id="keepRatio" type="checkbox" checked>
+          Keep aspect ratio
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="processButton" class="button primary" disabled>Choose an image first</button>
+        <button id="resetButton" class="button secondary" type="button">Reset</button>
+      </div>
+
+      <p id="status" class="status" aria-live="polite">Your image stays in your browser while you use this tool.</p>
+
+      <section id="result" class="result hidden">
+        <h2>Your image</h2>
+        <div class="preview-grid">
+          <div class="preview-card">
+            <h3>Original</h3>
+            <img id="originalPreview" alt="Original image preview">
+            <p id="originalInfo"></p>
+          </div>
+          <div class="preview-card">
+            <h3>Result</h3>
+            <img id="resultPreview" alt="Processed image preview">
+            <p id="resultInfo"></p>
+          </div>
+        </div>
+        <a id="downloadButton" class="button primary download" download="freepix-image">Download image ↓</a>
+      </section>
+    </section>
+
+    <section class="features">
+      <article><span>⚡</span><h2>Easy to use</h2><p>Simple tools for everyday image tasks.</p></article>
+      <article><span>🔒</span><h2>Private by design</h2><p>Image processing happens locally in your browser.</p></article>
+      <article><span>📱</span><h2>Works on mobile</h2><p>Use the tools on a computer, tablet, or phone.</p></article>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Freepix Tools</p>
+      <p>Free image tools for everyday work.</p>
+    </footer>
+  </main>
+</body>
+</html>
